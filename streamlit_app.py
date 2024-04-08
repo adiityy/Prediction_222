@@ -1,33 +1,55 @@
 import streamlit as st
-st.title('😃My first app - This app contains Practice and Building app')
-
-
-#the addition of sidebar changes the userphase 
-
-st_name = st.sidebar.text_input('Enter your name', 'Hello Professor')
-
-# approach 1. st.write(f'Hello {st_name}!')
-
-#approach 2
-st.write('Hello', st_name,'!')
-
-
-#Continue from Class notebook
-st.markdown("Let us create a Mathematical Application") #Markdown
-
-st.subheader("Different Lesson will be learnt")# Subheader
-
-st.caption("Lesson 1 - Displaying Text") #Caption
-
-st.code("x=2021")
-
-st.latex(r''' 
-a+a r^1+a r^2+a r^3 ''')
+st.title('This is my homework')
+
+
+
+
+
+#the addition of sidebar changes the userphase 
+
+
+
+st_name = st.sidebar.text_input('Enter your name', 'Hello Professor')
+
+
+
+# approach 1. st.write(f'Hello {st_name}!')
+
+
+
+#approach 2
+
+
+
+
+
+
+
+#Continue from Class notebook
+
+st.markdown("Practice Homework") #Markdown
+
+
+
+st.subheader("Different Lesson will be learnt")# Subheader
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 # LESSON 2
-st.caption("Lesson 2 - Input Widgets") #Caption
+st.caption("Lesson 2 ") #Caption
 
 st.checkbox('yes')
 
@@ -45,7 +67,7 @@ st.slider('Pick a number', 0,50)
 
 
 #STILL PRACTICING
-st.caption("Lesson 3 - Input Widget") #Caption
+st.caption("Lesson 3") #Caption
 
 st.number_input('Pick a number', 0,10)
 
@@ -64,7 +86,7 @@ st.color_picker('Choose your favorite color')
 
 # Lesson Continue
 import time
-st.caption("Lesson 4 - Displaying Progress Status") #Caption
+st.caption("Lesson 4") #Caption
 
 st.balloons()
 
@@ -82,7 +104,7 @@ st.info("It's easy to build a streamlit app")
 
 
 #MAKING GRAPHS
-st.caption("Lesson 5 - Displaying Graphs") #Caption
+st.caption("Lesson 5") #Caption
 
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -95,7 +117,7 @@ st.pyplot(fig)
 
 
 #Making Line graph
-st.caption("Lesson 6 - Line graph") #Caption
+st.caption("Lesson 6") #Caption
 import streamlit as st
 
 import pandas as pd
@@ -106,7 +128,7 @@ df= pd.DataFrame(
 st.line_chart(df)
 
 #Lesson 7
-st.caption("Lesson 7 - Bar chart") #Caption
+st.caption("Lesson 7") #Caption
 
 import streamlit as st
 
@@ -120,7 +142,7 @@ st.bar_chart(df)
 
 
 #Lesson 8
-st.caption("Lesson 8 - Area Graph") #Caption
+st.caption("Lesson 8") #Caption
 
 import streamlit as st
 import pandas as pd
@@ -138,7 +160,7 @@ import numpy as np
 import pandas as pd
 import altair as alt
 
-st.caption("Lesson 8 - Altair Chart") # Corrected caption text for consistency
+st.caption("Lesson 9") # Corrected caption text for consistency
 
 df = pd.DataFrame(
     np.random.randn(500, 3),
@@ -151,7 +173,7 @@ st.altair_chart(c, use_container_width=True) # Changed "True" to be a boolean ra
 
 
 #Lesson 10
-st.caption("Lesson 10 - Display Map Streamlit") # Corrected caption text for consistency
+st.caption("Lesson 10") # Corrected caption text for consistency
 
 
 import pandas as pd
@@ -167,11 +189,15 @@ st.map(df)
 
 
 #BUILDING MACHINE LEARNING APPLICATION
-st.title('📠 Build a machine learning application 🖥')
+st.title('Build a machine learning')
 
-st.subheader("PREDICTIVE MODEL")# Subheader
-
-st.caption("Random Forest Classifier") #Caption
+
+st.subheader("PREDICTIVE ANALYSIS")# Subheader
+
+
+
+st.caption("Random Forest ") #Caption
+
 
 st.caption("Step 1 - Import Necessary Libraries") #Caption
 
@@ -282,4 +308,4 @@ if prediction[0] == 0 :
 elif prediction[0] == 1 :
           st.success( 'Congratulations!! you will get the loan from Bank' )
           st.markdown( f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-          unsafe_allow_html=True,
+          unsafe_allow_html=True, )
